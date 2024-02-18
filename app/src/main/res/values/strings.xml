@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Doctor.h</string>
+    <string name="Menutitke1">健康</string>
+    <string name="Menutitle2">运动</string>
+    <string name="Menutitle3">我的</string>
+    <string name="Healthtextview1">心率:</string>
+    <string name="Healthtextview2">体温:</string>
+    <string name="Healthtextview3">体重:</string>
+    <string name="Healthtextview4">血压:</string>
+    <string name="DoctorBeta">Beta0.0.1</string>
+    <string name="Healthimage1">心率</string>
+    <string name="Healthimage3">体重</string>
+    <string name="Healthimage4">血压</string>
+    <string name="Healthimage2">体温</string>
+    <string name="OwnText2">个人资料</string>
+    <string name="OwnText1">信息</string>
+    <string name="OwnText3">家庭</string>
+    <string name="OwnText4">计划</string>
+    <string name="Ownimage1">信息</string>
+    <string name="Ownimage2">个人资料</string>
+    <string name="Ownimage3">家庭</string>
+    <string name="Ownimage4">计划</string>
+    <string name="Sportbutton1">计划</string>
+    <string name="TESTimage">测试</string>
+    <string name="htvTitle">生理指标</string>
+    <string name="REsetting">持续更新未开启</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

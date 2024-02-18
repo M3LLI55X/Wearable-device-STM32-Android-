@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".register"
+    android:orientation="vertical"
+    >
+
+    <ImageButton
+        android:id="@+id/close"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:src="@drawable/img2"
+        android:background="#0000"
+        android:layout_marginTop="15dp"
+        android:scaleType="fitXY"
+        />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="270dp"
+        android:shrinkColumns="3"
+        android:id="@+id/table"
+
+        >
+
+
+
+
+        <!--第一行-->
+
+
+        <!--第二行-->
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="15dp">
+
+            <TextView android:layout_width="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="姓名"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/username"
+                android:layout_width="304dp"
+                android:layout_height="wrap_content"
+                android:hint="输入英文字母" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp">
+
+            <TextView/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal|center_vertical"
+
+                android:text="生日"
+                android:textSize="18sp"
+                ></TextView>
+            <!--列表选择框-->
+            <LinearLayout
+                android:orientation="horizontal"
+                >
+
+                <Spinner
+                    android:id="@+id/spinner1"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/birthyear"></Spinner>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal|center_vertical"
+
+                    android:text="年"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+        </TableRow>
+
+        <TableRow>
+            <TextView/>
+            <TextView/>
+
+            <LinearLayout android:orientation="horizontal">
+
+                <Spinner
+                    android:id="@+id/spinner2"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/birthmonth"></Spinner>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal|center_vertical"
+
+                    android:text="月"
+                    android:textSize="18sp" />
+
+                <Spinner
+                    android:id="@+id/spinner3"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/birthday"></Spinner>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal|center_vertical"
+
+                    android:text="日"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+        </TableRow>
+
+
+
+
+        <!--第三行-->
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            >
+            <TextView/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="性别"
+                android:textSize="18sp" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/sex"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/male_rb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="男" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="女"
+                    android:id="@+id/famale_rb"/>
+            </RadioGroup>
+
+        </TableRow>
+
+
+        <!--第四行-->
+
+
+        <!--第五行-->
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:paddingTop="10dp">
+            <TextView/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="密码"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="输入6-16位数字或字母" />
+
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            >
+            <TextView/>
+            <TextView
+                android:layout_width="62dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="号码"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/telephone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="请输入11位手机号码"
+                android:inputType="number"
+                android:maxLength="11" />
+
+        </TableRow>
+    </TableLayout>
+
+
+    android:id="@+id/yz"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:layout_below="@id/close"
+    android:layout_marginTop="220dp"
+    android:layout_marginEnd="100dp"
+    android:layout_marginRight="150dp"
+    android:layout_marginBottom="100dp"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/close"
+        android:layout_marginTop="0dp"
+        >
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="验证码"
+            android:textSize="18sp" />
+        <EditText
+            android:id="@+id/editText2"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_weight="3" />
+
+        <Button
+            android:id="@+id/mTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="获取验证码"
+            android:textColor="#fff"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/zhu_ce"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/close"
+        android:layout_marginLeft="85dp"
+        android:layout_marginTop="0dp"
+        android:gravity="center"
+
+        android:text=" 注         册 "
+        android:textAllCaps="true"
+        android:textSize="14sp"
+        android:textStyle="italic" />
+</LinearLayout>
+

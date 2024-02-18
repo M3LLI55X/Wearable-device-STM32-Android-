@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_margin="0dp"
+    android:layout_marginTop="100dp"
+    android:fitsSystemWindows="true"
+    android:background="@drawable/img18"
+    android:backgroundTintMode="screen"
+    tools:context=".login"
+    >
+
+    <ImageButton
+        android:id="@+id/close"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_marginTop="15dp"
+        android:background="#0000"
+        android:scaleType="fitXY"
+        android:src="@drawable/img2" />
+
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/close"
+
+        android:layout_marginLeft="260dp"
+        android:layout_marginTop="235dp"
+        android:textColor="#5BB4AC"
+        android:textSize="21sp" />
+
+
+    <TextView
+        android:id="@+id/click"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/close"
+        android:text="Enter>>"
+        android:layout_marginLeft="250dp"
+        android:layout_marginTop="270dp"
+        android:textColor="#5BB4AC"
+        android:textSize="24sp" />
+
+
+
+</RelativeLayout>
